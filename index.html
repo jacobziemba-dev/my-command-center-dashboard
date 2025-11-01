@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Optimization Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Browser Optimization Dashboard</h1>
+        <p class="subtitle">Optimize and monitor your browser performance</p>
+    </header>
+
+    <main>
+        <!-- Browser Information Section -->
+        <section class="info-section">
+            <h2>Browser Information</h2>
+            <div class="info-grid" id="browserInfoGrid">
+                <!-- Info cards will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Cleanup Actions Section -->
+        <section class="cleanup-section">
+            <h2>Memory & Performance Cleanup</h2>
+            <div class="cleanup-actions">
+                <div class="action-card">
+                    <h3>localStorage</h3>
+                    <p>Clear browser localStorage data</p>
+                    <button class="btn btn-primary" id="clearLocalStorage">Clear localStorage</button>
+                </div>
+                <div class="action-card">
+                    <h3>sessionStorage</h3>
+                    <p>Clear browser sessionStorage data</p>
+                    <button class="btn btn-primary" id="clearSessionStorage">Clear sessionStorage</button>
+                </div>
+                <div class="action-card">
+                    <h3>Cookies</h3>
+                    <p>Clear cookies for this domain</p>
+                    <button class="btn btn-primary" id="clearCookies">Clear Cookies</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Notification Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
